@@ -1,6 +1,7 @@
 import { InfoOutlined, PlayArrow } from "@mui/icons-material";
 import React from "react";
 import { ContainerApresentacao } from "./style.js";
+import Logo from "../../assets/logo-thewitcher2.png"
 
 function Apresentacao(tipo) {
   return (
@@ -27,12 +28,12 @@ function Apresentacao(tipo) {
         </div>
       )}
       <img
-        src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        src="https://cdn.medcom.id/images/content/2020/02/14/1111896/gE2D3JkYCM.jpg"
         alt=""
       />
       <div className="info">
         <img
-          src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJVgMizPbVpIvXrd4xMBQAuNe0xmuW2WjoeGMDn1cFO.webp?r=df1"
+        src={Logo}
           alt=""
         />
         <span className="descricao">
@@ -42,13 +43,13 @@ function Apresentacao(tipo) {
           aliquam sed quod itaque esse!
         </span>
         <div className="botoes">
-          <button className="play">
-            <PlayArrow />
-            <span>Play</span>
+          <button className="assistir">
+            <PlayArrow style={{fontSize: "45px"}}/>
+            <span>Assistir</span>
           </button>
           <button className="more">
-            <InfoOutlined />
-            <span>Info</span>
+            <InfoOutlined style={{fontSize: "40px"}}/>
+            <span>Mais Informações</span>
           </button>
         </div>
       </div>

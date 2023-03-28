@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerApresentacao = styled.div`
-  height: 90vh;
+  height: 95vh;
   position: relative;
 
   .categorias {
@@ -30,7 +30,7 @@ export const ContainerApresentacao = styled.div`
   }
 
   .info {
-    width: 35%;
+    width: 30%;
     position: absolute;
     left: 50px;
     bottom: 100px;
@@ -39,7 +39,8 @@ export const ContainerApresentacao = styled.div`
     flex-direction: column;
 
     img {
-      width: 400px;
+      width: 500px;
+      margin-bottom: -180px
     }
 
     .descricao {
@@ -48,14 +49,15 @@ export const ContainerApresentacao = styled.div`
 
     .botoes {
       display: flex;
-
-      .play {
+      .assistir {
         background-color: #ffffff;
+        font-size: 20px;
         color: #0b0b0b;
       }
 
       .more {
         background-color: grey;
+        font-size: 20px;
         color: #ffffff;
       }
 
@@ -65,14 +67,14 @@ export const ContainerApresentacao = styled.div`
     }
 
     button {
-      padding: 10px 20px;
+      padding: 5px 15px;
       border: none;
       border-radius: 5px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       font-size: 18px;
-      margin-right: 10px;
+      margin-right: 15px;
       cursor: pointer;
       font-weight: 500;
     }

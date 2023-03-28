@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const ContainerLista = styled.div`
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 
   .lista-titulo {
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .wrapper {
