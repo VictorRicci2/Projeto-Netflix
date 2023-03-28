@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
 export const NavigationBar = styled.div`
-  width: 100%;
-  color: #ffffff;
-  background-color: #0b0b0b;
-  font-size: 15px;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.7));
+  .navbar {
+    width: 100%;
+    color: #ffffff;
+    background-color: #0b0b0b;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.7));
+  }
+
+  &.scrolled {
+    background-color: #000000;
+  }
 
   .container {
     padding: 20px 60px;

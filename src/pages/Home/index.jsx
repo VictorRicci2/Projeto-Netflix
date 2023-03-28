@@ -1,17 +1,19 @@
 import React from "react";
+import Apresentacao from "../../components/apresentacao";
+import Lista from "../../components/lista";
 import NavBar from "../../components/navbar";
-import { Container } from "./style.js";
+import { ContainerHome } from "./style.js";
 
 function Home() {
   return (
-    <Container>
+    <ContainerHome>
       <NavBar />
-      <img
-        width="100%"
-        src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-        alt=""
-      />
-    </Container>
+      <Apresentacao />
+      <Lista/>
+      <Lista/>
+      <Lista/>
+      <Lista/>
+    </ContainerHome>
   );
 }
 
