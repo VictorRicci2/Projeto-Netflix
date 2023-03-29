@@ -8,6 +8,10 @@ export const ContainerEntrar = styled.div`
   background-size: cover;
   position: relative;
 
+  a {
+    text-decoration: none;
+  }
+
   .topo {
     .wrapper {
       padding: 30px 0px;

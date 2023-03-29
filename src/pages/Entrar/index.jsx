@@ -17,7 +17,12 @@ function Entrar() {
             <h1>Entrar</h1>
             <input type="email" placeholder="Email ou Telefone" />
             <input type="password" placeholder="Senha" />
-            <button className="botao-entrar" href="/Home">Entrar</button>
+            <button className="botao-entrar">
+              <a href="/Home">
+
+              Entrar
+              </a>
+            </button>
             <span>
               Novo na Netflix? <b>Registre-se agora.</b>
             </span>
