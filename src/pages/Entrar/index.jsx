@@ -1,6 +1,10 @@
 import React, { useState, useRef } from "react";
 import { ContainerEntrar } from "./style.js";
 
+const handleLogin = () => {
+  window.location.href = "/home"
+}
+
 function Entrar() {
   return (
     <ContainerEntrar>
@@ -17,11 +21,8 @@ function Entrar() {
             <h1>Entrar</h1>
             <input type="email" placeholder="Email ou Telefone" />
             <input type="password" placeholder="Senha" />
-            <button className="botao-entrar">
-              <a href="/Home">
-
-              Entrar
-              </a>
+            <button className="botao-entrar" onClick={() => handleLogin()}>
+             Entrar
             </button>
             <span>
               Novo na Netflix? <b>Registre-se agora.</b>

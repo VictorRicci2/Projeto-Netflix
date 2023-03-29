@@ -12,8 +12,12 @@ function NavBar() {
     return () => (window.onscroll = null);
   };
 
+  const handleLogout = () => {
+    window.location.href = "/";
+  };
+
   return (
-    <NavigationBar >
+    <NavigationBar>
       <div className={isScrolled ? "navbar scrolled" : "navbar"}>
         <div className="container">
           <div className="logo">
@@ -40,7 +44,7 @@ function NavBar() {
               <ArrowDropDownIcon className="icones" />
               <div className="opcoes-perfil">
                 <span>Configurações</span>
-                <span>Sair</span>
+                <span onClick={() => handleLogout()}>Sair</span>
               </div>
             </div>
           </div>
