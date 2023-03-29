@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { ContainerRegistrar } from "./style.js";
 
 function Registar() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  const handleRegister = () => {
+    setEmail(emailRef.current.value);
+  };
+
+  const handleFinishRegister = () => {
+    setPassword(passwordRef.current.value);
+  };
+
   return (
     <ContainerRegistrar>
       <div className="topo">
@@ -20,10 +34,35 @@ function Registar() {
             Quer assistir? Informe seu email para criar ou reiniciar sua
             assinatura.
           </p>
-          <div className="input">
-            <input type="email" placeholder="Digite seu e-mail" />
-            <button className="botao-registrar">Vamos lá</button>
-          </div>
+          {!email ? (
+            <div className="input">
+              <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                ref={emailRef}
+              />
+              <button
+                className="botao-registrar"
+                onClick={() => handleRegister()}
+              >
+                Vamos lá
+              </button>
+            </div>
+          ) : (
+            <form className="input">
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                ref={passwordRef}
+              />
+              <button
+                className="botao-registrar"
+                onClick={() => handleFinishRegister()}
+              >
+                Vamos lá
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </ContainerRegistrar>
